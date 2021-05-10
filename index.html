@@ -74,7 +74,7 @@
             if (responseData && responseData.data) {
                 if (responseData.data.centers.length <= 0) {
                     errorContainer.innerHTML =
-                        `<div calss = "col-sm-6"><b> Sorry, planned vaccination centers are not available at the specified Pincode. Please check later </b></div><br />`
+                        `<div calss = "col-sm-6"><b> Sorry, no availability in planned vaccination centers available at the specified Pincode. Please check later </b></div><br />`
                 }
                 for (let i = 0; i < responseData.data.centers.length; i++) {
                     let hospName = responseData.data.centers[i].name;
@@ -111,7 +111,7 @@
                 }
                 if (!vaccineCenter) {
                     errorContainer.innerHTML =
-                        `<div calss = "col-sm-6"><b> Sorry, planned vaccination centers are not available at the specified Pincode. Please check later </b></div><br />`
+                        `<div calss = "col-sm-6"><b> Sorry, no availability in planned vaccination centers available at the specified Pincode. Please check later </b></div><br />`
                 }
             }
 
